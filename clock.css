@@ -1,0 +1,126 @@
+/* Created by Elkenzi. -- At --> https://github.com/moelkenzi 
+    -- and credits to Elkenzi
+*/
+
+/* Importing The Poppins Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Custom Re-Usable CSS */
+
+:root {
+  --font-poppins: "Poppins", sans-serif;
+  --font-size: 16px;
+  --font-weight: 400;
+  --font-color: #fff;
+  --primary-color: #3697fe;
+  --secondary-color: #fd3671;
+  --indigo-light: #241864;
+  --indigo-dark: #140a3f;
+  --glass: rgba(217, 217, 217, 0.01);
+  --blur: blur(15.76705551147461px);
+  --bg-gradient: linear-gradient(90deg, #140a3f 0%, #241864 100%);
+}
+
+/* animation: var(--animate-bounce); bounce 1s infinite */
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-10%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+@keyframes bounce-diff {
+  0%,
+  100% {
+    transform: translateY(10%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+/* ========================== */
+
+.glass {
+  background: var(--glass);
+  backdrop-filter: var(--blur);
+}
+
+html,
+body {
+  background: var(--bg-gradient);
+  color: #fff;
+  overflow: hidden;
+  font-family: var(--font-poppins);
+}
+
+p {
+  font-size: var(--font-size);
+  opacity: 0.7;
+}
+
+.dot {
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  background: transparent;
+  /* border: 3px solid #000; */
+  margin-bottom: 40px;
+}
+
+#box-red {
+  /* background-color: var(--glass); */
+  background-color: var(--secondary-color);
+  backdrop-filter: var(--blur);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* animation: bounce 1s infinite; */
+}
+
+#circle-blue {
+  background-color: var(--primary-color);
+  backdrop-filter: var(--blur);
+  border-radius: 99999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* animation: bounce-diff 1s infinite; */
+}
+
+.clock {
+  width: 1280px;
+  height: 328px;
+  /* background: var(--bg-gradient); */
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding-left: 200px; */
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+  z-index: 0;
+}
+
+.card {
+  width: 962px;
+  height: 201;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  gap: 90px;
+  z-index: 40;
+  /* background-color: var(--indigo-light); */
+  background-color: var(--glass);
+  backdrop-filter: var(--blur);
+}
+
+/* 🎉 Done the CSS - 10:12 pm -> Sat/July/2025 */

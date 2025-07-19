@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Clock - Assignment</title>
+    <link rel="stylesheet" href="clock.css" />
+  </head>
+  <body>
+    <div id="box-red" class="w-45 h-45 absolute top-[220px] left-[200px]"></div>
+    <div id="circle-blue" class="w-45 h-45 absolute top-[470px] right-[220px]"></div>
+    <main class="flex items-center justify-center min-h-screen main">
+      <div class="clock">
+        <div class="card">
+          <div class="hr text-8xl flex flex-col items-center justify-center gap-4">
+            <h1>15</h1>
+            <p>HOURS</p>
+          </div>
+          <span class="dot">:</span>
+          <div class="min text-8xl flex flex-col items-center justify-center gap-4">
+            <h1>13</h1>
+            <p>MINS</p>
+          </div>
+          <span class="dot">:</span>
+          <div class="sec text-8xl flex flex-col items-center justify-center gap-4">
+            <h1>51</h1>
+            <p>SEC</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
